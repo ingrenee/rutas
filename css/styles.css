@@ -1,0 +1,429 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+textarea {
+	-webkit-appearance: none;
+}
+.color-bg {
+	background-color: #f0fbff;
+}
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	position: relative;
+	background-image: url(../images/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.layer {
+	position: relative;
+}
+.header {
+}
+.top
+{
+	height: 78px;
+}
+.top .logo
+{
+	background-image: url(../images/logo.png);
+	height: 57px;
+	width: 387px;
+	display: block;
+	text-decoration: none;
+	font-size: 0px;
+}
+
+.top .registrate
+{
+	background-color: #5e7b9a;
+	display: inline-block;
+	color: #FFF;
+	font-size: 11px;
+	text-decoration: none;
+	overflow: hidden;
+	float: right;
+	
+-webkit-box-shadow: 1px 1px 2px 0px rgba(206, 220, 245, 1);
+-moz-box-shadow:    1px 1px 2px 0px rgba(206, 220, 245, 1);
+box-shadow:         1px 1px 2px 0px rgba(206, 220, 245, 1);
+	
+}
+
+.header h4
+{
+	font-size:10px;
+	color:#1f3657;
+	text-align:center;
+	font-weight:normal;
+	}
+	
+	.header h2
+	{
+	font-weight: normal;
+	color: #747474;
+	font-size: 13px;
+	text-align: center;
+	display: block;
+}
+	
+		.header h2 strong
+	{
+	text-transform: uppercase;
+	color: #1f3657;
+}
+	
+		.header h2 strong.big
+	{
+	font-size: 20px;
+	font-weight: bold;
+	color: #1f3657;
+}
+.top .registrate span
+{
+	background-image: url(../images/icon-user.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 10px;
+	display: block;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.top .registrate:hover
+{
+	background-color: #1f3657;
+}
+
+.content {
+}
+
+.content p.parrafo01
+{
+	color: #747474;
+	font-size: 11px;
+	line-height: 16px;
+	word-spacing: 2px;
+}
+
+.footer {
+}
+.page {
+	width: 960px;
+	display: block;
+	margin: auto;
+}
+.page2
+{
+	display: block;
+	margin: auto;
+	width: 712px;
+}
+.step {
+	display: block;
+	background-color: #f0fbff;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding: 15px;
+	border: 1px solid #f0fbff;
+	color: #757575;
+}
+.step:hover
+{
+	border: 1px solid #a7b7cd;
+	
+-webkit-box-shadow: inset -3px 1px 5px 5px rgba(167, 183, 205, 0.2);
+-moz-box-shadow:    inset -3px 1px 5px 5px rgba(167, 183, 205, 0.2);
+box-shadow:         inset -3px 1px 5px 5px rgba(167, 183, 205, 0.2);
+}
+.step h3 {
+	display: inline-block;
+	vertical-align: top;
+	width: 13.5%;
+	padding: 0px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: -5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	color: #1f3657;
+}
+.all
+{
+	font-size: 13px;
+	color: #5d99ef;
+	line-height: 16px;
+	display: inline-block;
+	vertical-align: top;
+}
+.all label , label.all
+{
+	display: inline-block;
+	font-size: 11px;
+}
+	
+	.all label input, .all input
+	{margin-top: 2px;
+float: left;
+margin-right: 4px;}
+.step .step-content {
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+	font-size: 13px;
+	font-weight: normal;
+}
+.step .step-content label span
+{
+	min-width: 150px;
+	display: inline-block;
+}
+.step .step-content .row:first-child
+{
+	margin-top:0px;}
+.step .step-content .row
+{
+	margin-top: 12px;
+}
+.step.active {
+	background-color: #023258;
+	color: #fff ;
+	border: 1px solid #023258;
+	box-shadow:none;
+}
+
+.step.active h3
+{
+	color:#fff;}
+.row {
+	display: block;
+}
+.checkbox-content
+{
+	overflow: hidden;
+}
+.checkbox-content label {
+	display: block;
+	float: left;
+	width: 25%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+/* boton ayuda */
+.help {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+}
+.help-form {
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.45);
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.45);
+	z-index: 999;
+	position: relative;
+}
+.help-form .help-content {
+	padding: 20px;
+}
+.help-form .help-content .fields label {
+	display: block;
+}
+.center {
+	text-align: center;
+}
+
+/*tabla*/
+
+#table table
+{
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	width: 100%;
+}
+#table table  tr
+{}
+#table table  tr th
+{
+	background-color: #4b4b4b;
+	color: #FFF;
+}
+#table table  tr.hide{
+	
+	display:none;}
+	#table table  tr.show{
+		
+	
+	}
+#table table  tr td,
+#table table  tr th
+{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #999;
+}
+
+#table table  tr th.sub
+{
+	background-color: #7b7b7b;
+}
+#table table tr:nth-of-type(odd) {
+	background-color: #eeeeee;
+}
+#table .more-rows
+{
+	display: block;
+	background-color: #eeeeee;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+	color: #333;
+	text-align: center;
+}
+
+/* info*/
+
+.overlay
+{
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: #CCC;
+	top: 0px;
+}
+
+
+.fecha
+{
+	margin-bottom: 21px;
+}
+.descripcion
+{
+	height:108px;}
+	.step .step-content .row.boton
+	{
+	margin-top: 20px;
+	text-align: center;
+}
+	button.boton2
+	{
+	-webkit-box-shadow: inset 0px 0px 7px 2px rgba(255, 255, 255, 0.65);
+	-moz-box-shadow: inset 0px 0px 7px 2px rgba(255, 255, 255, 0.65);
+	box-shadow: inset 0px 0px 7px 2px rgba(255, 255, 255, 0.65);
+	border: 1px solid #cad6dc;
+	
+-webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+		}
+		
+		
+		button.boton2:hover
+		{-webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 4px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 4px 0px rgba(50, 50, 50, 0.75);}
+	button
+	{
+	background-image: url(../images/bgbutton-2.jpg);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #FFFFFF;
+	margin: auto;
+	padding-top: 9px;
+	padding-right: 25px;
+	padding-bottom: 9px;
+	padding-left: 25px;
+	color: #172840;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0px 0px 7px 2px rgba(255, 255, 255, 0.65), 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset 0px 0px 7px 2px rgba(255, 255, 255, 0.65),0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: inset 0px 0px 7px 2px rgba(255, 255, 255, 0.65),0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+	font-style: normal;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+}
+	button:hover
+	{-webkit-box-shadow: inset 0px 0px 15px 2px rgba(255, 255, 255, 0.65), 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset 0px 0px 15px 2px rgba(255, 255, 255, 0.65),0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: inset 0px 0px 15px 2px rgba(255, 255, 255, 0.65),0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+	cursor:pointer;}
+	
+.help-open
+{
+	background-image: url(../images/ayuda.png);
+	height: 53px;
+	width: 47px;
+	text-decoration: none;
+	font-size: 0px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: right center;
+	position: absolute;
+	right: 0px;
+	z-index: 0;
+}
+
+.help-open:hover
+{
+	background-image: url(../images/ayuda_hover.png);
+	background-repeat: no-repeat;
+}
+.help-close
+{
+	background-image: url(../images/close.png);
+	height: 29px;
+	width: 29px;
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	right: 10px;
+	font-size: 0px;
+	top: 10px;
+}
