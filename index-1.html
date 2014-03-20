@@ -26,6 +26,11 @@
       <div class="row descripcion">
         <h2>Contamos con más de <strong class="big">50 PUERTOS</strong> y<strong class="big"> 23 Países</strong> registrados en <strong class="big">14 Rutas Marítimas</strong> del
           Perú al exterior, <strong>TARIFAS DE FLETES INTERNACIONALES, opciones de líneas navieras y mucho más</strong>. </h2>
+          
+          <div class="row center margin-top-10">
+          <a href="#" class="compartir"><span>Compartir</span></a>
+          </div>
+          
       </div>
       
       </div>
@@ -114,10 +119,10 @@
                 <input type="checkbox">
                 Puerto  15 </label>
             </div>
-            <div class="row boton">
+          
+          </div>  <div class="row boton center margin-top-15">
               <button id="button_2">Continuar</button>
             </div>
-          </div>
         </div>
         <div class="row step">
           <h3>Paso 3</h3>
@@ -177,10 +182,10 @@
                 <input type="checkbox">
                 Puerto  15 </label>
             </div>
-            <div class="row boton">
+            
+          </div><div class="row boton center margin-top-15">
               <button id="boton-3"> Mostrar resultados !</button>
             </div>
-          </div>
         </div>
       </div>
     </div>
@@ -189,41 +194,73 @@
     <div class="page"></div>
   </div>
   <div class="help"><a   href="#" class="help-open"> Ayuda</a>
-    <div class="help-form color-bg" style="display:none;">
+    <div class="help-form color-bg" style="display:nogne;">
       <div class="help-content"> <a href="" class="help-close"> <span>x</span> </a>
-        <div class="row"> Encontraste lo que buscabas? </div>
-        <div class="row">
+       <div class="row">
+        <div class="row center"> <strong>Encontraste lo que buscabas? </strong></div>
+        <div class="row ">
           <div class="center">
-            <label>
-              <input type="radio">
+            <label class="label01">
+              <input name="feedback" type="radio" checked value="si" class="feedback"   data-target="si">
               Sí</label>
-            <label>
-              <input type="radio">
+            <label class="label01">
+              <input type="radio" data-target="no" value="no" name="feedback" class="feedback">
               No</label>
           </div>
         </div>
-        <div class="row"> Ingresa aqui los datos no encontrados: </div>
-        <div class="row fields">
-          <label><span>Puerto(s):</span>
-            <input type="text">
-          </label>
-          <label><span>País(es):</span>
-            <input type="text">
-          </label>
-          <label><span>Otro:</span>
-            <input type="text">
-          </label>
+        
         </div>
-        <div class="row"> Si deseas que nos contactemos contigo, ingresa tus datos aquí: </div>
+        <div class=" feedback_content" id="si">
+        <div class="row bulet"> Ayúdanos a mejorar con tus sugerencias: </div>
+        <div class="row fields">
+         <label><textarea></textarea></label>
+        </div> </div>
+        
+        <div class=" feedback_content" id="no"  style="display:none;">
+        <div class="row bulet"> Ayúdanos a mejorar con tus sugerencias: </div>
+        <div class="row fields">
+         <label><span>Puerto(s) :</span> <input type="text"></label></div>
+         <div class="row fields">
+         <label><span>Pa&iacute;s(es) :</span> <input type="text"></label>
+         </div>
+         <div class="row fields">
+         <label><span>Otro :</span> <input type="text"></label>         
+         </div>
+        </div> 
+        
+        
+        
+        <div class="row bulet"> Si deseas que nos contactemos contigo, <br>ingresa tus datos aquí: </div>
         <div class="row fields">
           <label><span>Nombre:</span>
             <input type="text">
           </label>
+          </div>
+          <div class="row fields">
           <label><span>Mail:</span>
             <input type="text">
           </label>
         </div>
+       
+        
+        
         <div class="row">
+        <table border="0" cellpadding="0" class="capcha" cellspacing="0">
+        <tr><td width="48%">¿No puedes leerlo?
+            <a href="#">Inténtalo con otro texto</a></td>
+            
+            <td class="2%"></td>
+            <td class="48%">Escribe el texto que aparece en la imagen:</td></tr>
+        <tr valign="top"><td><img src="images/cha.jpg"></td>
+        <td class="bulet2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        
+        <td><input type="text"></td></tr>
+        <tr><td><a href="#">¿Qué es esto?</a></td><td></td></tr>
+        </table>
+        </div>
+        
+        
+        <div class="row margin-top-10 center">
           <button class="boton2">Enviar</button>
         </div>
       </div>

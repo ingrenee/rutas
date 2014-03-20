@@ -15,6 +15,17 @@ $(document).ready(function(e) {
 		$('.help-form').hide();
     });
 	
+	$('.feedback').click(function(e) {
+     	//  var val=$("input[type='radio'][name='feedback']:checked").val();
+		// alert(val);
+		$('.feedback_content').hide();
+		var id=$(this).attr('data-target');
+		$('#'+id).show();
+		
+		
+    });
+	
+	
 	/*table*/
 	
 		$('#table tr').addClass('hide');
