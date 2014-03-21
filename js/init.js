@@ -4,7 +4,7 @@
 $(document).ready(function(e) {
     
 	
-	
+	/*tabs de home*/
 	$('.tabs-links').click(function(e) {
         e.preventDefault();
 		$('.tabs-links').removeClass('active');
@@ -14,6 +14,55 @@ $(document).ready(function(e) {
 		
 		$(id).show();
     });
+	
+	
+	
+	/* tabs info*/
+		$('.tabs-info a').click(function(e) {
+        e.preventDefault();
+		$('.tabs-info a').removeClass('active');
+		$(this).addClass('active');
+		var id=$(this).attr('href');
+		$('.tab-info').hide();
+		$(id).show();
+    });
+	
+		$('.control.next').click(function(e) {
+        e.preventDefault();
+		
+		pos=$(".tabs-info a:last-child").attr('data-pos');
+		pos2=$(".tabs-info a.active").attr('data-pos');
+		if(parseInt(pos)!= parseInt(pos2)){
+		
+		var tmp=$('.tabs-info a.active').next().addClass('temp');
+		$('.tabs-info a').removeClass('active');
+		$('.tabs-info a.temp').addClass('active').removeClass('temp');
+		var id=$('.tabs-info a.active').attr('href');
+		$('.tab-info').hide();
+		$(id).show();
+		}
+    });
+	
+	
+	$('.control.prev').click(function(e) {
+        e.preventDefault();
+		
+		pos=$(".tabs-info a.active").attr('data-pos');
+		if(parseInt(pos)>1){
+		var tmp=$('.tabs-info a.active').prev().addClass('temp');
+		$('.tabs-info a').removeClass('active');
+		$('.tabs-info a.temp').addClass('active').removeClass('temp');
+		var id=$('.tabs-info a.active').attr('href');
+		if(typeof id !== "undefined"){
+		$('.tab-info').hide();
+		$(id).show();
+		}
+		}
+		
+    });
+	
+	
+	
 	
 	/* open close  help form*/
 	$('.help-open').click(function(e) {
@@ -40,11 +89,8 @@ $(document).ready(function(e) {
 	/*table*/
 	
 		$('.tab-content-data table tbody tr').addClass('hide');
-		$('.tab-content-data table tbody tr').eq(0).removeClass('hide');
-		$('.tab-content-data table tbody tr').eq(1).removeClass('hide');
-		$('.tab-content-data table tbody tr').eq(2).removeClass('hide');
-		$('.tab-content-data table tbody tr').eq(3).removeClass('hide');
-		$('.tab-content-data table tbody tr').eq(4).removeClass('hide');
+
+
 		show_rows('.table-data');
 	
 	/* select all*/

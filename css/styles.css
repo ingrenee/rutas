@@ -927,7 +927,7 @@ h2
 .info-content .tabs-info-content .col2 {
 	width: 55%;
 }
-.info-content .tabs-info li a {
+.info-content .tabs-info  a {
 	color: #FFF;
 	text-decoration: none;
 	background-color: #5e7b9a;
@@ -945,14 +945,14 @@ h2
 	font-size: 12px;
 	font-weight: lighter;
 }
-.info-content .tabs-info li a:hover {
+.info-content .tabs-info  a:hover {
 	background-color: #8299B3;
 }
-.info-content .tabs-info li {
+.info-content .tabs-info a {
 	display: inline-block;
 	float: left;
 }
-.info-content .tabs-info li a.active {
+.info-content .tabs-info  a.active {
 	background-color: #d5e4ff;
 	color: #2a4369;
 }
@@ -995,6 +995,12 @@ h2
 	background-color: #FFFFFF;
 }
 
+.tab-info:first-child
+{
+	display:block;}
+	.tab-info
+	{
+		display:none;}
 .tab-content-data
 {
 	display:none;}
