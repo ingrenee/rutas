@@ -5,11 +5,22 @@ $(document).ready(function(e) {
     
 	
 	
+	$('.tabs-links').click(function(e) {
+        e.preventDefault();
+		$('.tabs-links').removeClass('active');
+		$(this).addClass('active');
+		var id=$(this).attr('href');
+		$('.tab-content-data').hide();
+		
+		$(id).show();
+    });
+	
 	/* open close  help form*/
 	$('.help-open').click(function(e) {
         e.preventDefault();
 		$('.help-form').show();
     });
+	
 	$('.help-close').click(function(e) {
         e.preventDefault();
 		$('.help-form').hide();
@@ -28,10 +39,13 @@ $(document).ready(function(e) {
 	
 	/*table*/
 	
-		$('#table tr').addClass('hide');
-		$('#table tr').eq(0).removeClass('hide');
-		$('#table tr').eq(1).removeClass('hide');
-		show_rows('#table-data')
+		$('.tab-content-data table tbody tr').addClass('hide');
+		$('.tab-content-data table tbody tr').eq(0).removeClass('hide');
+		$('.tab-content-data table tbody tr').eq(1).removeClass('hide');
+		$('.tab-content-data table tbody tr').eq(2).removeClass('hide');
+		$('.tab-content-data table tbody tr').eq(3).removeClass('hide');
+		$('.tab-content-data table tbody tr').eq(4).removeClass('hide');
+		show_rows('.table-data');
 	
 	/* select all*/
 	
@@ -60,19 +74,19 @@ $(element).data("checked",0);
 				}
     });
 	
-	$('.more-rows').click(function(e) {
+	/*$('.more-rows').click(function(e) {
 		e.preventDefault();
-        show_rows('#table-data');
+        //show_rows('#table-data');
     });
-	
-	$('.info').click(function(e) {
+	*/
+	/*$('.info').click(function(e) {
 		e.preventDefault();
         
 		$('body').append('<div class="overlay"></div>');
 		
 		
     });
-	
+	*/
 	
 	
 	
@@ -80,9 +94,14 @@ $(element).data("checked",0);
 });
 function show_rows(id)
 {
-	var num=parseInt($(id).attr('data-num'));
+$(id).each(function(index, element) {
+    
+		var num=parseInt($(this).attr('data-num'));
+	
 for(i=0; i<num;i++){
-	$(id+' .hide').eq(0).removeClass('hide').addClass('show');
+	$(this).find('.hide').eq(0).removeClass('hide').addClass('show');
 }
+});
+
 	
 }
